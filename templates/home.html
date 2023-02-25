@@ -4,6 +4,11 @@
         <title>Deevia Software</title>
     </head>
     <body>
-        Hello there, we make leading ML, AI application 
+        <h3>Hello there, we make leading ML, AI application</h3> 
+        <ul>
+            {% for names in data %}
+                <li>{{names['name']}}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
